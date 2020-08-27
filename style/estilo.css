@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'Fontelogo';
+    src: url("../font/Mermaid1001.ttf");
+    font-family: 'Fontetexto';
+    src: url("../font/Dead\ Revolution.otf")
+}
+
 p {
     text-align: justify;
     text-indent: 41px;
@@ -14,10 +21,34 @@ div#interface{
     padding: 10px;
 }
 
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 180px;
+    background: url("../images/background_header.jpg") 0px -75px;
+}
+
+header#cabecalho h1{
+    font-family: 'Fontelogo', sans-serif; 
+    font-size: 35px;
+    color: rgb(82, 76, 76);
+    text-shadow: 1px 1px 4px;
+    text-indent: 40px;
+    padding-top:20px;
+}
+
+header#cabecalho h2{
+    font-size: 25px;
+    color: rgb(190, 31, 31);
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.6);
+    text-indent: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
 figure.foto-legenda{
     position: relative;
-    width: 500px;
-    height: 350px;
+    width: 400px;
+    height: 250px;
     border: 5px solid white;
     box-shadow: 1px 1px 4px black;
 }
@@ -66,7 +97,7 @@ nav#menu li{
 }
 
 nav#menu li:hover{
-    background-color: rgba(50, 67, 75, 0.4);
+    background-color: rgb(50, 67, 75, 0.4);
 }
 
 ul.opcoes_listadas li{
