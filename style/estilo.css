@@ -38,7 +38,7 @@ header#cabecalho h1{
 
 header#cabecalho h2{
     font-size: 25px;
-    color: rgb(190, 31, 31);
+    color: rgb(255, 0, 157);
     text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.6);
     text-indent: 10px;
     padding-left: 20px;
@@ -106,4 +106,27 @@ ul.opcoes_listadas li{
 
 nav#menu h1{
     display: none;
+}
+
+section#corpo{
+    display: block;
+    width: 460px;
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+aside#lateral{
+    display: block;
+    width: 470px;
+    float: right;
+}
+
+footer#rodape{
+    clear:both;
+    border-top: 1px solid black;
+}
+
+footer#ropade p{
+    text-align: center;
 }
