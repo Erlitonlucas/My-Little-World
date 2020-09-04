@@ -1,23 +1,33 @@
 @charset "UTF-8";
 
-@font-face{
+@font-face {
     font-family: 'Fontelogo';
     src: url("../font/Mermaid1001.ttf");
     font-family: 'Fontetexto';
     src: url("../font/Dead\ Revolution.otf")
 }
 
-body{
+body {
     background-color: rgb(243, 243, 243);
+    /*font-family: Arial, sans-serif;*/  /*Retira a serfia do texto*/
 }
 
 p {
     text-align: justify;
     text-indent: 41px;
-    font-size: medium;
+    font-size: 13pt;
 }
 
-div#interface{
+a {
+    color: #a3b3c2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#interface {
     width: 1000px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
@@ -31,7 +41,7 @@ header#cabecalho{
     margin-bottom: 3px;
 }
 
-header#cabecalho h1{
+header#cabecalho hgroup h1{
     font-family: 'Fontelogo', sans-serif; 
     font-size: 35px;
     color: rgb(82, 76, 76);
@@ -40,7 +50,7 @@ header#cabecalho h1{
     padding-top:20px;
 }
 
-header#cabecalho h2{
+header#cabecalho hgroup h2{
     font-size: 25px;
     color: rgb(96, 110, 102);
     text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.6);
@@ -106,6 +116,7 @@ nav#menu li:hover{
 
 ul.opcoes_listadas li{
     text-indent: 40px;
+    font-size: 13pt;
 }
 
 nav#menu h1{
@@ -120,8 +131,13 @@ section#corpo{
     padding-right: 40px;
 }
 
-section#corpo h1{
+article#noticia_principal h2{
+    font-size: 16pt;
+    color: #606060;
+    background-color: #dddddd;
     text-indent: 30px;
+    padding: 5px 0px 5px;
+    margin: 10px 0px 10px 0px;
 }
 
 section#corpo p{
@@ -146,6 +162,25 @@ table#tabelaspec td.ce{
     color: rgb(255, 255, 255);
     background-color: rgb(150, 150, 150);
 }
+
+table#tabelaspec td.cd{
+    background-color: rgb(221, 221, 221);
+}
+
+table#tabelaspec caption{
+    color: rgb(128, 128, 128);
+    font-size: 12pt;
+}
+
+/*A tag foi comentada para não prejudicar o visual do site e o assunto não ser perdido*/
+
+/*table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 6px;
+}*/
 
 aside#lateral{
     display: block;
