@@ -4,13 +4,33 @@
         <meta charset="UTF-8">
         <title>Teste muito loco</title>
         <style>
-
+            body{
+                background-color: rgb(66, 143, 206);
+                color: white;
+                font: normal 18pt Arial;
+            }
         </style>
     </head>
     <body>
+    <!--<script>
+            var nome;
+            var idade;
+            nome = window.prompt("Qual o seu nome?");
+            idade = window.prompt("Qual a sua idade?");
+            window.alert(`O seu nome é ${nome} e sua idade é ${idade}`);
+            var soma = Number.parseInt(idade) /*--- Number(idade) --- TAMBÉM FUNCIONA*/ + nome.length;
+            window.alert(`a soma da sua idade com a quatidade de letra do seu nome é ${soma}`);
+        </script>-->
+        <h1>Começando os estudo do JavaScript</h1>
+        <p>vambora aprender <strong>DOM</strong></p>
+        <div id="msg">Clice em mim</div>
         <script>
-            var a = "a";
-            alert(a);
-        </script>    
+            var a = window.document.getElementById('msg');
+            a.innerText = "olá"
+            a.style.backgroundColor = "black";
+            //ou
+            window.document.getElementById('msg').innerText = "olá";
+            window.document.getElementById('msg').backgroundColor = "black";
+        </script>
     </body>
 </html>
